@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  title: "galah"
+  navbar:
+    background: light
+    right:
+      - text: To R Website
+        href: http://galah.ala.org.au/index.html
+      - text: To Python Website
+        href: about.qmd
+  page-footer:
+    left: |
+      Proudly supported by the Atlas of Living Australia
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
