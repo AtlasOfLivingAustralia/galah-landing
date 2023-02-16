@@ -13,8 +13,8 @@ html {
 }
 
 :root {
-  --primary-orange: #E06E53;
-  --secondary-color: #60a3a3;
+  --primary-orange: #f5b2d0;
+  --secondary-color: #78CCCC;
   --main-font: 'Roboto', sans-serif;
   --subheader-font: 'Roboto', sans-serif;
   --mono-font: 'Fira Mono', monospace;
@@ -30,7 +30,7 @@ html {
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #60a3a3;
+    color: #78CCCC;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -41,62 +41,61 @@ html {
     color: var(--secondary-color) !important;
 }
 
-
-
-.hello-quarto {
-  padding-bottom: 1rem;
+.nav-footer a {
+  color: #757575;
 }
 
-@media (min-width: 600px) {
-.hello-quarto-banner {
-  display: inline-flex;
-  align-content: center;
-  justify-content: center;
+.nav-footer a:hover {
+  color: #78CCCC;
 }
 
-.hello-quarto-banner h1 {
-  margin-right: 40px;
+
+/* ALA navbar favicon color */
+
+.bi-ala {
+  content: url("./images/favicon.ico");
+  height:26px;
 }
 
-.hello-quarto-banner ul {
-
+.bi-ala:hover {
+  opacity: 50;
+  background-color: #fff;
+  transition: all .3s;
+  clip-path: circle();
 }
+
+
+
+a {
+  color: #60a3a3;
+  text-decoration: underline;
 }
 
-.hello-quarto-banner .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+a:hover {
+  color: #78CCCC;
+}
+
+.button-column {
+  display: block;
+  padding: 0 12px;
+}
+
+.button-web{
+  border-radius: 25px;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.7rem;
+  color: #222322;
+  background: #fef2f7;
+  transition: 0.3s;
   border: none;
-  border-bottom: 2px solid #39729E !important;
-  color: #39729E;
-  background-color: transparent;
-
 }
 
-.hello-quarto-banner .nav-pills button {
-  width: 125px;
-}
-
-.hello-quarto .tab-content {
-  border: none;
-  padding: 0;
-  color: rgb(84, 85, 85);
-}
-
-.hello-quarto .tab-content p {
-  font-size: 1.1em;
-  margin-bottom: 1.5em;
-}
-
-.hello-quarto div.sourceCode {
-  background-color: white;
-  border: 1px solid #dee2e6;
-}
-
-.hello-output {
-  background-color: white;
-  border: 1px solid #dee2e6;
-  max-height: 660px;
-}
-
-div.sourceCode {
-    background-color: white;
+.button-web:hover,
+.button-web:focus {
+  color: #222322;
+  box-shadow: inset -11.5em 0 0 0 #f5b2d0,
+              inset 11.5em 0 0 0 #f5b2d0;
 }

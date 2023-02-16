@@ -89,10 +89,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -103,12 +99,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -124,6 +114,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="">
+<meta property="og:site-name" content="galah">
+<meta name="twitter:title" content="">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-fixed">
@@ -144,14 +138,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="http://galah.ala.org.au/index.html">
- <span class="menu-text">To R Website</span></a>
+ <span class="menu-text">R package website</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html">
- <span class="menu-text">To Python Website</span></a>
+ <span class="menu-text">Python package website</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.ala.org.au"><i class="bi bi-ala" role="img">
+</i> 
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -166,55 +164,86 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<div class="column-page quarto-layout-panel" style="float:left;">
+<div class="column-screen page-columns page-full" style="background-color: #FFFFFF; padding-top: 50px; margin-top: -4vh">
+<div class="column-page quarto-layout-panel" style="float:left; background-color: #FFFFFF;">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center" style="">
 <figure class="figure">
-<p><img src="https://raw.githubusercontent.com/AtlasOfLivingAustralia/ala-labs/main/images/hex/galah_logo.png" class="img-fluid figure-img" width="500"></p>
+<p><img src="https://raw.githubusercontent.com/AtlasOfLivingAustralia/ala-labs/main/images/hex/galah_logo.png" class="img-fluid figure-img" width="400"></p>
 </figure>
 </div>
 </div>
 </div>
 <section id="galah" class="level1 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <h1>galah</h1>
-<p>galah is an interface to biodiversity data hosted by the Atlas of Living Australia (ALA). It enables users to locate and download species occurrence records (observations, specimens, eDNA records, etc.), taxonomic information, or associated media such as images or sounds, and to restrict their queries to particular taxa or locations.<br><br> If you have any questions, comments, or spot any bugs, <a href="mailto:support@ala.org.au">email us</a> or <a href="https://github.com/AtlasOfLivingAustralia/galah">report an issue</a> on our GitHub page</p>
+<p>galah is an interface to biodiversity data hosted by the <a href="https://ala.org.au/">Atlas of Living Australia (ALA)</a>. It enables users to locate and download species occurrence records (observations, specimens, eDNA records, etc.), taxonomic information, or associated media such as images or sounds, and to restrict their queries to particular taxa or locations.<br><br> If you have any questions, comments, or spot any bugs, <a href="mailto:support@ala.org.au">email us</a> or <a href="https://github.com/AtlasOfLivingAustralia/galah">report an issue</a> on our GitHub page</p>
 </section>
 </div>
 </div>
-<div class="column-screen page-columns page-full" style="background-color: #fdebf2; -webkit-transition: all 1s linear;">
-<div class="column-page">
+</div>
+<div class="column-screen page-columns page-full">
+<div class="column-page" style="padding-top: 30px;">
 <div class="grid">
-<section id="r" class="level1 g-col-lg-6 g-col-12">
-<h1>R</h1>
+<div class="g-col-lg-6 g-col-12">
+<div class="cell">
+<div class="cell-output-display">
+<div class="button-column">
+<a href="http://galah.ala.org.au/" style="border-bottom: none">
+<button class="button-web">R</button>
+</a>
+</div>
+</div>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(galah)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">galah_call</span>() <span class="sc">|&gt;</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">galah_identify</span>(<span class="st">"reptilia"</span>, <span class="st">"mammalia"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">galah_filter</span>(year <span class="sc">&gt;</span> <span class="dv">2010</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">atlas_counts</span>()</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">galah_filter</span>(year <span class="sc">&gt;</span> <span class="dv">2019</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">galah_group_by</span>(order) <span class="sc">|&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">atlas_counts</span>()</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 1 × 1
-    count
-    &lt;int&gt;
-1 2683311</code></pre>
+<pre><code># A tibble: 22 × 2
+   order             count
+   &lt;chr&gt;             &lt;int&gt;
+ 1 Passeriformes   5949638
+ 2 Psittaciformes  1233790
+ 3 Charadriiformes  659309
+ 4 Anseriformes     588868
+ 5 Columbiformes    548564
+ 6 Ciconiiformes    464233
+ 7 Pelecaniformes   369328
+ 8 Coraciiformes    300030
+ 9 Gruiformes       292393
+10 Accipitriformes  241239
+# … with 12 more rows</code></pre>
 </div>
 </div>
-</section>
-<section id="python" class="level1 g-col-lg-6 g-col-12">
-<h1>Python</h1>
+</div>
+<div class="g-col-lg-6 g-col-12">
+<div class="cell">
+<div class="cell-output-display">
+<div class="button-column">
+<a href="" style="border-bottom: none">
+<button class="button-web">Python</button>
+</a>
+</div>
+</div>
+</div>
 <div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> galah</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>python code</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>wow there <span class="kw">is</span> python code</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>incredible python code</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>galah.atlas_counts(</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    taxa <span class="op">=</span> [<span class="st">"reptilia"</span>,<span class="st">"mammalia"</span>],</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    filters <span class="op">=</span> <span class="st">"year&gt;2019"</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    group_by <span class="op">=</span> <span class="st">"order"</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -358,7 +387,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Proudly supported by the Atlas of Living Australia</div>   
+    <div class="nav-footer-left"><a href="https://ala.org.au/"><img src="images/ALA_Logo.jpg" class="img-fluid" alt="Atlas of Living Australia" width="200"></a></div>   
+      <div class="nav-footer-center">
+        <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.ala.org.au/terms-of-use/#cy">Copyright</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://creativecommons.org/licenses/by/3.0/au/">License</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.ala.org.au/terms-of-use/">Terms of Use</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://ala.org.au/contact-us/">Support</a>
+  </li>  
+</ul>
+      </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/atlaslivingaust">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
   </div>
 </footer>
 

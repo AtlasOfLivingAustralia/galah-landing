@@ -5,28 +5,44 @@ format:
     page-layout: full
 ---
 
-:::{.column-page layout="[1,1]" style="float:left;"}
-```{r out.width='500px', out.extra='style=""', echo=FALSE}
+```{r}
+#| include: false
+library(htmltools)
+source(here::here("R", "html_functions.R"))
+```
+
+:::{.column-screen style="background-color: #FFFFFF; padding-top: 50px; margin-top: -4vh"}
+:::{.column-page layout="[1,1]" style="float:left; background-color: #FFFFFF;"}
+```{r out.width='400px', out.extra='style=""', echo=FALSE}
 #| fig-align: center
 knitr::include_graphics("https://raw.githubusercontent.com/AtlasOfLivingAustralia/ala-labs/main/images/hex/galah_logo.png")
 ```
 
 # galah
 
-galah is an interface to biodiversity data hosted by the Atlas of Living Australia (ALA). It enables users to locate and download species occurrence records (observations, specimens, eDNA records, etc.), taxonomic information, or associated media such as images or sounds, and to restrict their queries to particular taxa or locations.<br><br>
+galah is an interface to biodiversity data hosted by the [Atlas of Living Australia (ALA)](https://ala.org.au/). It enables users to locate and download species occurrence records (observations, specimens, eDNA records, etc.), taxonomic information, or associated media such as images or sounds, and to restrict their queries to particular taxa or locations.<br><br>
 If you have any questions, comments, or spot any bugs, [email us](mailto:support@ala.org.au) or [report an issue](https://github.com/AtlasOfLivingAustralia/galah) on our GitHub page
+:::
 :::
 
 
+:::{.column-screen}
 
-:::{.column-screen style="background-color: #fdebf2; -webkit-transition: all 1s linear;"}
-
-:::{.column-page}
+:::{.column-page style="padding-top: 30px;"}
 
 ::: {.grid}
 ::: {.g-col-lg-6 .g-col-12}
 
-# R
+```{r}
+#| echo: false
+
+add_button(
+  text = "R",
+  url = "http://galah.ala.org.au/"
+)
+```
+
+
 
 ````markdown
 ```{{r}}
@@ -34,7 +50,8 @@ library(galah)
 
 galah_call() |>
   galah_identify("reptilia", "mammalia") |>
-  galah_filter(year > 2010) |>
+  galah_filter(year > 2019) |>
+  galah_group_by(order) |>
   atlas_counts()
 ```
 
@@ -47,8 +64,9 @@ galah_call() |>
 library(galah)
 
 galah_call() |>
-  galah_identify("reptilia", "mammalia") |>
-  galah_filter(year > 2010) |>
+  galah_identify("aves") |>
+  galah_filter(year > 2019) |>
+  galah_group_by(order) |>
   atlas_counts()
 ```
 
@@ -56,15 +74,24 @@ galah_call() |>
 
 ::: {.g-col-lg-6 .g-col-12}
 
-# Python
+```{r}
+#| echo: false
+
+add_button(
+  text = "Python",
+  url = ""
+)
+```
 
 ````markdown
 ```{{python}}
 import galah
 
-python code
-wow there is python code
-incredible python code
+galah.atlas_counts(
+    taxa = ["reptilia","mammalia"],
+    filters = "year>2019",
+    group_by = "order"
+)
 ```
 
 ````
