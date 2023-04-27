@@ -9,10 +9,10 @@ website:
   navbar:
     background: light
     right:
-      - text: R package website
-        href: http://galah.ala.org.au/index.html
-      - text: Python package website
-        href: about.qmd
+      - text: R package
+        href: http://galah.ala.org.au/R
+      - text: Python package
+        href: https://galah.ala.org.au/Python
       - href: https://www.ala.org.au
         icon: ala
   page-footer:

@@ -38,7 +38,7 @@ If you have any questions, comments, or spot any bugs, [email us](mailto:support
 
 add_button(
   text = "R",
-  url = "http://galah.ala.org.au/"
+  url = "http://galah.ala.org.au/R"
 )
 ```
 
@@ -79,7 +79,7 @@ galah_call() |>
 
 add_button(
   text = "Python",
-  url = ""
+  url = "http://galah.ala.org.au/Python"
 )
 ```
 
