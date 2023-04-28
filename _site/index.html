@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.324">
+<meta name="generator" content="quarto-1.3.290">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -59,6 +59,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
+<link href="./images/favicon_galah.ico" rel="icon">
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -146,7 +147,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center" style="">
 <figure class="figure">
-<p><img src="https://raw.githubusercontent.com/AtlasOfLivingAustralia/ala-labs/main/images/hex/galah_logo.png" class="img-fluid figure-img" width="400"></p>
+<p><img src="https://raw.githubusercontent.com/AtlasOfLivingAustralia/ala-labs/main/images/hex/galah_logo.png" class="quarto-discovered-preview-image img-fluid figure-img" width="400"></p>
 </figure>
 </div>
 </div>
@@ -182,20 +183,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 22 × 2
-   order             count
-   &lt;chr&gt;             &lt;int&gt;
- 1 Passeriformes   5980451
- 2 Psittaciformes  1241154
- 3 Charadriiformes  663980
- 4 Anseriformes     592471
- 5 Columbiformes    551062
- 6 Ciconiiformes    467036
- 7 Pelecaniformes   371292
- 8 Coraciiformes    302057
- 9 Gruiformes       294297
-10 Accipitriformes  243174
-# ℹ 12 more rows</code></pre>
+<pre><code># A tibble: 18 × 2
+   order            count
+   &lt;chr&gt;            &lt;int&gt;
+ 1 Diprotodontia   209587
+ 2 Squamata        100601
+ 3 Peramelemorphia  63989
+ 4 Rodentia         49891
+ 5 Chiroptera       35437
+ 6 Carnivora        28522
+ 7 Lagomorpha       22020
+ 8 Artiodactyla     18268
+ 9 Monotremata      18072
+10 Dasyuromorphia   17703
+11 Testudines       11402
+12 Crocodylia        8456
+13 Cetacea           3748
+14 Perissodactyla     819
+15 Sirenia             51
+16 Insectivora         13
+17 Primates             1
+18 Rhynchocephalia      1</code></pre>
 </div>
 </div>
 </div>
@@ -218,6 +226,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    group_by <span class="op">=</span> <span class="st">"order"</span></span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>              order   count
+0      Artiodactyla   18268
+1         Carnivora   28522
+2           Cetacea    3748
+3        Chiroptera   35437
+4        Crocodylia    8456
+5    Dasyuromorphia   17703
+6     Diprotodontia  209587
+7       Insectivora      13
+8        Lagomorpha   22020
+9       Monotremata   18072
+10  Peramelemorphia   63989
+11   Perissodactyla     819
+12         Primates       1
+13  Rhynchocephalia       1
+14         Rodentia   49891
+15          Sirenia      51
+16         Squamata  100601
+17       Testudines   11402</code></pre>
+</div>
+</div>
 </div>
 </div>
 </div>

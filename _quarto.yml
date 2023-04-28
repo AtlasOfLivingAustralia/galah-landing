@@ -5,6 +5,7 @@ website:
   title: "galah"
   twitter-card: true
   open-graph: true
+  favicon: images/favicon_galah.ico
   search: false
   navbar:
     background: light

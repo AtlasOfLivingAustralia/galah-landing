@@ -64,7 +64,7 @@ galah_call() |>
 library(galah)
 
 galah_call() |>
-  galah_identify("aves") |>
+  galah_identify("reptilia","mammalia") |>
   galah_filter(year > 2019) |>
   galah_group_by(order) |>
   atlas_counts()
@@ -95,6 +95,21 @@ galah.atlas_counts(
 ```
 
 ````
+
+```{python}
+#| warning: false
+#| echo: false
+
+import galah
+
+galah.atlas_counts(
+    taxa = ["reptilia","mammalia"],
+    filters = "year>2019",
+    group_by = "order",
+    expand = False
+)
+```
+
 :::
 
 :::
