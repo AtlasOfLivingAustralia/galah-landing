@@ -96,6 +96,5 @@ a:hover {
 .button-web:hover,
 .button-web:focus {
   color: #222322;
-  box-shadow: inset -11.5em 0 0 0 #f5b2d0,
-              inset 11.5em 0 0 0 #f5b2d0;
+  box-shadow: inset 0 -3.25em 0 0 #f5b2d0;
 }
