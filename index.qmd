@@ -49,9 +49,9 @@ add_button(
 library(galah)
 
 galah_call() |>
-  galah_identify("reptilia", "mammalia") |>
-  galah_filter(year > 2019) |>
-  galah_group_by(order) |>
+  identify("reptilia", "mammalia") |>
+  filter(year > 2019) |>
+  group_by(order) |>
   atlas_counts()
 ```
 
@@ -64,9 +64,9 @@ galah_call() |>
 library(galah)
 
 galah_call() |>
-  galah_identify("reptilia","mammalia") |>
-  galah_filter(year > 2019) |>
-  galah_group_by(order) |>
+  identify("reptilia","mammalia") |>
+  filter(year > 2019) |>
+  group_by(order) |>
   atlas_counts()
 ```
 
